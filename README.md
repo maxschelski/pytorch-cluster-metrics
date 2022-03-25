@@ -1,5 +1,6 @@
 # pytorch-cluster-metrics
 Pytorch implementation of standard metrics for clustering.
+Test on PyTorch = 1.10.1 / cuda11.3_cudnn8_0
 
 So far only the Silhouette score is implemented.
 Code for the Silhouette score was developed in NumPy by Alexandre Abraham:
@@ -15,3 +16,9 @@ https://gist.github.com/AlexandreAbraham/5544803
 > pip install -e .
 
 For any questions feel free to contact me via E-Mail to max.schelski@googlemail.com.
+
+# Usage
+
+> from torchclustermetrics import silhouette
+> 
+> score = silhouette.score(X, labels)
