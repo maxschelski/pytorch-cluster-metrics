@@ -19,4 +19,5 @@ For any questions feel free to contact me via E-Mail to max.schelski@googlemail.
 # Usage
 
 > from torchclustermetrics import silhouette
+> 
 > score = silhouette.score(X, labels)
