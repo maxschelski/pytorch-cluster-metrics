@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
 setup(
-      name="torchslutermetrics",
+      name="torchclustermetrics",
       packages=find_packages()
       )
