@@ -11,7 +11,7 @@ https://gist.github.com/AlexandreAbraham/5544803
 > git clone https://github.com/maxschelski/pytorch-cluster-metrics.git
 2. Navigate into the folder of the repository (pytorch-cluster-metrics):
 > cd pytorch-cluster-metrics
-3. Install fastfig locally using pip:
+3. Install torchclustermetrics locally using pip:
 > pip install -e .
 
 For any questions feel free to contact me via E-Mail to max.schelski@googlemail.com.
