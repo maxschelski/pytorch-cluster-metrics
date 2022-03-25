@@ -3,7 +3,6 @@ import torch
 
 # Code developed in NumPy by Alexandre Abraham:
 # https://gist.github.com/AlexandreAbraham/5544803  Avatar
-# reply with code here: https://stackoverflow.com/questions/70658959/is-there-any-cluster-evaluation-method-implemented-in-pytorch
 
 
 class silhouette():
@@ -20,6 +19,9 @@ class silhouette():
         The best value is 1 and the worst value is -1. Values near 0 indicate
         overlapping clusters. Negative values generally indicate that a sample has
         been assigned to the wrong cluster, as a different cluster is more similar.
+
+	Code developed in NumPy by Alexandre Abraham:
+	https://gist.github.com/AlexandreAbraham/5544803  Avatar
         Parameters
         ----------
         X : array [n_samples_a, n_features]
