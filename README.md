@@ -15,3 +15,9 @@ https://gist.github.com/AlexandreAbraham/5544803
 > pip install -e .
 
 For any questions feel free to contact me via E-Mail to max.schelski@googlemail.com.
+
+# Usage
+
+> from torchclustermetrics import silhouette
+<br/>
+> score = silhouette.score(X, labels)
