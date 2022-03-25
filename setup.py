@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
 setup(
-      name="fastfig",
+      name="torchslutermetrics",
       packages=find_packages()
       )
