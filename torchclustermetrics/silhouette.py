@@ -31,7 +31,7 @@ class silhouette():
         loss : Boolean
                 If True, will return negative silhouette score as 
                 torch tensor without moving it to the CPU. Can therefore 
-                be used to calculate the gradient.
+                be used to calculate the gradient using autograd.
                 If False positive silhouette score as float 
                 on CPU will be returned.
         Returns
