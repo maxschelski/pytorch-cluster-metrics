@@ -12,7 +12,9 @@ https://gist.github.com/AlexandreAbraham/5544803
 > git clone https://github.com/maxschelski/pytorch-cluster-metrics.git
 2. Navigate into the folder of the repository (pytorch-cluster-metrics):
 > cd pytorch-cluster-metrics
-3. Install torchclustermetrics locally using pip:
+3. (Recommended) Create environment for torchclustermetrics with Anaconda:
+> conda env create -f environment.yml
+4. Install torchclustermetrics locally using pip:
 > pip install -e .
 
 For any questions feel free to contact me via E-Mail to max.schelski@googlemail.com.
