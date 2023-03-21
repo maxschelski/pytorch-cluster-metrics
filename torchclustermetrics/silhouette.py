@@ -58,8 +58,8 @@ class silhouette():
 
         unique_labels = torch.unique(labels)
 
-        A = _intra_cluster_distances_block(X, labels, unique_labels)
-        B = _nearest_cluster_distance_block(X, labels, unique_labels)
+        A = silhouette._intra_cluster_distances_block(X, labels, unique_labels)
+        B = silhouette._nearest_cluster_distance_block(X, labels, unique_labels)
         sil_samples = (B - A) / torch.maximum(A, B)
 
         # nan values are for clusters of size 1, and should be 0
@@ -85,7 +85,7 @@ class silhouette():
         """
         intra_dist = torch.zeros(labels.size(), dtype=torch.float32,
                                  device=torch.device("cuda"))
-        values = [_intra_cluster_distances_block_(
+        values = [silhouette._intra_cluster_distances_block_(
                     X[torch.where(labels == label)[0]])
                     for label in unique_labels]
         for label, values_ in zip(unique_labels, values):
@@ -120,7 +120,7 @@ class silhouette():
 
         label_combinations = torch.combinations(unique_labels, 2)
 
-        values = [_nearest_cluster_distance_block_(
+        values = [silhouette._nearest_cluster_distance_block_(
                     X[torch.where(labels == label_a)[0]],
                     X[torch.where(labels == label_b)[0]])
                     for label_a, label_b in label_combinations]
